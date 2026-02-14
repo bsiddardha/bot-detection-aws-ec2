@@ -25,26 +25,6 @@ This project is a **real-time bot detection system** that:
 
 The system runs on an **AWS EC2 instance** and analyzes real server traffic.
 
----
-
-## 🏗️ Architecture
-
-Local Machine → Sends HTTP Traffic
-⬇
-AWS EC2 (Ubuntu)
-⬇
-Nginx Web Server
-⬇
-Access Logs (`/var/log/nginx/access.log`)
-⬇
-Feature Extraction
-⬇
-Trained ML Model (`bot_detection_model.pkl`)
-⬇
-Bot / Normal Classification
-
----
-
 ## 📂 Project Structure
 
 ```
