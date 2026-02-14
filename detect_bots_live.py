@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 import boto3
 
-# ================= CONFIG =================
+
 LOG_FILE = "/var/log/nginx/access.log"
 WINDOW_MINUTES = 5
 
@@ -14,7 +14,6 @@ SNS_TOPIC_ARN = "arn:aws:sns:eu-north-1:140723489456:bot-detection-alerts"
 AWS_REGION = "eu-north-1"
 
 BOT_PROB_THRESHOLD = 0.9
-# ==========================================
 
 # Load ML model
 model = joblib.load(MODEL_PATH)
