@@ -8,6 +8,7 @@ import boto3
 LOG_FILE = "/var/log/nginx/access.log"
 WINDOW_MINUTES = 5
 
+#i Randomforest g
 MODEL_PATH = "bot_detection_model.pkl"
 
 SNS_TOPIC_ARN = "arn:aws:sns:eu-north-1:140723489456:bot-detection-alerts"
